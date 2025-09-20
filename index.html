@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rene Ugarte | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased font-['Inter']">
+
+    <!-- Fixed Header and Navigation Menu -->
+    <header class="fixed top-0 left-0 w-full z-50 p-6 bg-slate-950/50 backdrop-blur-sm">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <a href="#" class="text-xl font-bold text-white transition-colors duration-300 hover:text-cyan-400">Rene Ugarte</a>
+            <div class="space-x-8">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#art" class="nav-link">Art</a>
+                <a href="#immersiveness" class="nav-link">Immersiveness</a>
+                <a href="#marketing" class="nav-link">Marketing</a>
+                <a href="#media" class="nav-link">Media</a>
+                <a href="#design" class="nav-link">Design</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bioluminescence Canvas -->
+    <canvas id="bioluminescence-canvas" class="fixed inset-0 w-full h-full -z-10"></canvas>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center text-center relative z-10">
+        <div class="relative p-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in-up">
+                Visual Storyteller
+            </h1>
+            <p class="text-xl md:text-2xl font-medium text-slate-300 animate-fade-in" style="animation-delay: 0.5s;">
+                Creative Technologist | Data-Driven Artist
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content Modules -->
+    <main class="container mx-auto px-4 py-16 relative z-10">
+        <!-- About Section -->
+        <section id="about" class="section py-24 md:py-32">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="section-title">About Me</h2>
+                <p class="text-lg leading-relaxed mb-8">
+                    My name is Rene, and I am a passionate creator who blends art with strategic thinking. My journey is one of continuous growth, always seeking new ways to craft meaningful and impactful experiences. I believe in using clear communication and compelling narratives to solve complex problems and drive change.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Art Section -->
+        <section id="art" class="section py-24 md:py-32">
+            <h2 class="section-title">Art & Generative Visuals</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Art Card 1 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Generative" alt="Generative Art" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Generative Art</h3>
+                        <p class="work-card-description">Exploring the intersection of code and art to create unique digital abstractions.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Art Card 2 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=3D+Art" alt="3D Art" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">3D Art</h3>
+                        <p class="work-card-description">Conceptual and realistic 3D renderings for various digital and media projects.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Art Card 3 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Visual+Systems" alt="Visual Systems" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Visual Systems</h3>
+                        <p class="work-card-description">Creating cohesive visual languages for brands and digital platforms.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Immersiveness Section -->
+        <section id="immersiveness" class="section py-24 md:py-32">
+            <h2 class="section-title">Immersive Experiences</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Immersiveness Card 1 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Virtual+Worlds" alt="Virtual Worlds Project" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Virtual World Development</h3>
+                        <p class="work-card-description">Creating interactive and compelling virtual environments for entertainment and education.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Immersiveness Card 2 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=AR+Experiences" alt="Augmented Reality Project" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Augmented Reality (AR)</h3>
+                        <p class="work-card-description">Designing and building AR experiences that blend the digital with the physical world.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Immersiveness Card 3 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Soundscapes" alt="Interactive Soundscapes" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Interactive Soundscapes</h3>
+                        <p class="work-card-description">Crafting multi-layered audio experiences that respond to user movement and environment.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing Section -->
+        <section id="marketing" class="section py-24 md:py-32">
+            <h2 class="section-title">Marketing & Strategy</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Marketing Card 1 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Social+Media" alt="Social Media Strategy" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Social Media Campaigns</h3>
+                        <p class="work-card-description">Developing content and strategy to increase engagement and drive growth on social platforms.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Marketing Card 2 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Content+Strategy" alt="Content Strategy" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Content Strategy</h3>
+                        <p class="work-card-description">Crafting comprehensive content plans to tell a compelling brand story.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Marketing Card 3 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Client+Work" alt="Client Collaborations" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Client Collaborations</h3>
+                        <p class="work-card-description">Case studies of my work with clients, from initial brief to successful delivery.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="section py-24 md:py-32">
+            <h2 class="section-title">Media Production</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Media Card 1 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Audiovisual" alt="Audiovisual Project" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Audiovisual Production</h3>
+                        <p class="work-card-description">From conceptualization to post-production, this project showcases my end-to-end media skills.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Media Card 2 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Sound+Design" alt="Sound Design Project" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Sound Design</h3>
+                        <p class="work-card-description">An exploration in creating immersive audio landscapes for video and interactive media.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Media Card 3 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Motion+Graphics" alt="Motion Graphics Project" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Motion Graphics</h3>
+                        <p class="work-card-description">Dynamic motion graphics created for branding and promotional content.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Section -->
+        <section id="design" class="section py-24 md:py-32">
+            <h2 class="section-title">UI/UX & Design</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Design Card 1 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Web+Design" alt="Web Design Project" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Web Design</h3>
+                        <p class="work-card-description">Creating responsive and visually appealing websites with a focus on user experience.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Design Card 2 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=UI+Design" alt="UI Design Project" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">User Interface Design</h3>
+                        <p class="work-card-description">Crafting intuitive and clean interfaces that are a joy to interact with.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Design Card 3 -->
+                <div class="work-card group">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Branding" alt="Branding Project" class="work-card-image">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Brand Identity</h3>
+                        <p class="work-card-description">Developing comprehensive brand identities that resonate with a target audience.</p>
+                        <a href="#" class="btn-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlighted Projects Section -->
+        <section id="highlighted" class="section py-24 md:py-32">
+            <h2 class="section-title">Highlighted Projects</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Highlighted Project 1 -->
+                <div class="work-card group p-6">
+                    <img src="https://placehold.co/800x600/0f172a/94a3b8?text=Highlighted+Project+1" alt="Highlighted Project 1" class="work-card-image mb-6">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Project: Interactive Art Installation</h3>
+                        <p class="work-card-description mb-4">
+                            A large-scale project blending generative art with user interaction, creating a dynamic and responsive visual experience. This was created for a major art exhibition.
+                        </p>
+                        <a href="#" class="btn-link">Read Case Study</a>
+                    </div>
+                </div>
+                <!-- Highlighted Project 2 -->
+                <div class="work-card group p-6">
+                    <img src="https://placehold.co/800x600/0f172a/94a3b8?text=Highlighted+Project+2" alt="Highlighted Project 2" class="work-card-image mb-6">
+                    <div class="work-card-content">
+                        <h3 class="work-card-title">Project: Brand Re-Imagination</h3>
+                        <p class="work-card-description mb-4">
+                            A full-service branding project for a tech startup, including logo design, website UI/UX, and a complete social media marketing strategy.
+                        </p>
+                        <a href="#" class="btn-link">Read Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section py-24 md:py-32">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="text-xl md:text-2xl leading-relaxed mb-8">
+                    I'm always open to new opportunities and collaborations. Feel free to reach out and say hello!
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:ugarterene@gmail.com" class="text-slate-400 hover:text-white transition-colors duration-200" title="Email">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors duration-200" title="LinkedIn">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.769s.784-1.769 1.75-1.769 1.75.79 1.75 1.769-.784 1.769-1.75 1.769zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 text-center text-slate-500 text-sm">
+        <p>&copy; 2024 Rene Ugarte. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Bioluminescence Canvas Animation
+        const canvas = document.getElementById('bioluminescence-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+        let state = 'flowing'; // 'flowing', 'forming', 'passing', 'dispersing'
+        let targetPoints = [];
+        let passSpeed = 2; // Controls the speed of the passing shape
+        const animalForms = {
+            'T-Rex': [
+                {x: 0, y: 0}, {x: 10, y: 5}, {x: 25, y: 7}, {x: 40, y: 0}, {x: 50, y: -5},
+                {x: 60, y: -2}, {x: 65, y: 5}, {x: 70, y: 10}, {x: 75, y: 15}, {x: 80, y: 20},
+                {x: 75, y: 25}, {x: 60, y: 30}, {x: 45, y: 32}, {x: 30, y: 30}, {x: 15, y: 25},
+                {x: 0, y: 20}
+            ],
+            'Pterodactyl': [
+                {x: 0, y: 0}, {x: 10, y: -5}, {x: 20, y: -15}, {x: 30, y: -10}, {x: 40, y: 0},
+                {x: 30, y: 10}, {x: 20, y: 15}, {x: 10, y: 5},
+                {x: 20, y: 0}, {x: 15, y: -2}, {x: 15, y: 2},
+                {x: 35, y: 20}, {x: 45, y: 25}
+            ]
+        };
+        const extinctAnimals = ['T-Rex', 'Pterodactyl'];
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            init();
+        });
+
+        class Particle {
+            constructor(x, y) {
+                this.x = x || Math.random() * canvas.width;
+                this.y = y || Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.1;
+                this.vy = (Math.random() - 0.5) * 0.1;
+                this.radius = Math.random() * 2 + 1;
+                this.color = 'hsl(180, 80%, 70%)';
+                this.alpha = 0.5;
+                this.target = null;
+            }
+
+            update() {
+                if (this.target) {
+                    const dx = this.target.x - this.x;
+                    const dy = this.target.y - this.y;
+                    this.vx = dx * 0.03; // Speed up movement to target
+                    this.vy = dy * 0.03;
+                } else {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+                    this.vy += 0.001; // Slower gravity
+                }
+
+                // Attraction to mouse
+                const dx = mouse.x - this.x;
+                const dy = mouse.y - this.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < 150) {
+                    const angle = Math.atan2(dy, dx);
+                    this.vx += Math.cos(angle) * 0.02;
+                    this.vy += Math.sin(angle) * 0.02;
+                }
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = this.alpha;
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            particles = [];
+            for (let i = 0; i < 200; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.globalAlpha = 0.1;
+            ctx.fillStyle = 'hsl(240, 50%, 5%)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.globalAlpha = 1;
+
+            if (state === 'passing') {
+                particles.forEach(p => {
+                    if (p.target) {
+                        p.target.x += passSpeed;
+                    }
+                });
+                const rightmostParticleX = particles.reduce((max, p) => p.target ? Math.max(max, p.target.x) : max, 0);
+                if (rightmostParticleX > canvas.width + 100) {
+                    state = 'dispersing';
+                    particles.forEach(p => {
+                        p.target = null;
+                        p.vx = (Math.random() - 0.5) * 0.5;
+                        p.vy = (Math.random() - 0.5) * 0.5;
+                    });
+                }
+            }
+
+            particles.forEach(p => { p.update(); p.draw(); });
+
+            // Draw trails
+            ctx.beginPath();
+            ctx.strokeStyle = 'hsl(180, 80%, 70%)';
+            ctx.globalAlpha = 0.02;
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const p1 = particles[i];
+                    const p2 = particles[j];
+                    const distance = Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2);
+                    if (distance < 80) {
+                        ctx.moveTo(p1.x, p1.y);
+                        ctx.lineTo(p2.x, p2.y);
+                    }
+                }
+            }
+            ctx.stroke();
+
+            // Schedule next state transition
+            if (state === 'flowing' && Math.random() > 0.999) {
+                formShape();
+            } else if (state === 'forming' && particles.every(p => p.target && Math.sqrt(Math.pow(p.target.x - p.x, 2) + Math.pow(p.target.y - p.y, 2)) < 5)) {
+                state = 'passing';
+            } else if (state === 'dispersing' && particles.every(p => Math.abs(p.vx) < 0.1 && Math.abs(p.vy) < 0.1)) {
+                state = 'flowing';
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        function formShape() {
+            state = 'forming';
+            const randomAnimal = extinctAnimals[Math.floor(Math.random() * extinctAnimals.length)];
+            const form = animalForms[randomAnimal];
+            const scale = Math.min(canvas.width, canvas.height) / 100;
+            const yOffset = (canvas.height / 2) + (Math.random() * 200 - 100);
+
+            targetPoints = form.map(p => ({
+                x: -100 + p.x * scale,
+                y: yOffset + p.y * scale
+            }));
+            
+            for (let i = 0; i < particles.length; i++) {
+                const target = targetPoints[i % targetPoints.length];
+                particles[i].target = target;
+            }
+        }
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.x;
+            mouse.y = e.y;
+        });
+        
+        window.onload = function () {
+            init();
+            animate();
+        }
+    </script>
+</body>
+</html>
